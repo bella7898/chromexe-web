@@ -1,8 +1,70 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
+    <title>FocusFocus</title>
+<style>
+    .wrapper {
+        overflow: hidden;
+     }
+    .sliding-background {
+        background: url("/files/bgimage.svg") repeat-x;
+        height: 961px;
+        width: 6000px;
+        animation: slide 60s linear infinite;
+     }
+    @keyframes slide {
+        0%{
+            transform: translate3d(0, 0, 0);
+        }
+        100%{
+            transform: translate3d(-2000px, 0, 0);
+        }
+    }
+/* body{
+ background-color: white;
+ padding: 20px;
+ font-family: "lato", sans-serif;
+ margin: auto;
+ opacity: .65;
+ max-width: 1000px;
+ min-height: 100%
+
+}
+#starthead{text-align:center;
+opacity: .99;
+}
+h1 {
+  text-shadow: 2px 2px 5px grey;
+
+}
+html{
+  background: url("oompa.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#no
+{
+  font-weight: bold;
+   opacity: .99;
+}
+*/
+</style>
 </head>
 <body>
-  <h>Hello, welcome!</h>
-  <p>Bonjour, bienvenue!</p>
+<div class="wrapper">
+    <div class="sliding-background"></div>
+</div>
+  <div id="body">
+    <div id="starthead">
+        <h1>Where you going buddy?</h1>
+        <p>You cant run from us.</p>
+    
+        <p>We know that you wanna get off your work.</p>
+        <h3>no can do</h3>
+    </div>
+</div>
+</div>
 </body>
-<html>
+</html>
