@@ -9,7 +9,8 @@
      }
     .sliding-background {
         background: url("files/bgimage.svg") repeat-x;
-        opacity: 10%;
+        background-position-y: relative;
+        opacity: 50%;
         height: 961px;
         width: 6000px;
         animation: slide 60s linear infinite;
@@ -22,6 +23,10 @@
             transform: translate3d(0, 0, 0);
         }
     }
+    #body{
+        position: fixed;
+        z-index: 1;
+    }
 /* body{
  background-color: white;
  padding: 20px;
@@ -30,14 +35,12 @@
  opacity: .65;
  max-width: 1000px;
  min-height: 100%
-
 }
 #starthead{text-align:center;
 opacity: .99;
 }
 h1 {
   text-shadow: 2px 2px 5px grey;
-
 }
 html{
   background: url("oompa.jpg") no-repeat center center fixed;
@@ -56,17 +59,15 @@ html{
 </head>
 <body>
 <div class="wrapper">
-  <div class="sliding-background">
     <div id="body">
-       <div id="starthead">
-         <h1>Where you going buddy?</h1>
-         <p>You cant run from us.</p>
-    
-         <p>We know that you wanna get off your work.</p>
-         <h3>no can do</h3>
-       </div>
+        <div id="starthead">
+          <h1>Where you going buddy?</h1>
+          <p>You can't run from us.</p>
+          <p>We know that you wanna get off your work.</p>
+          <p>no can do</p>
+        </div>
     </div>
-  </div>
+    <div class="sliding-background"></div> 
 </div>
 
 </body>
