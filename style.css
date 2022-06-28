@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+    font-family: "Courier New", serif;
+}
+.flex-container{
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.sliding-background {
+    background: url("files/cities.png") repeat-x;
+    background-position-y: fixed;
+    height: 1000px;
+    width: 6000px;
+    animation: slide 60s linear infinite;
+ }
+@keyframes slide {
+    0%{
+        transform: translate3d(-2000px, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+#content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    z-index: 1;  
+} 
+#starthead{
+    opacity: .99;
+}
+.main {
+    background: -webkit-linear-gradient(#ff0000, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-align: center;
+}
+.main::after{
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(180deg); 
+    line-height: 1.6em;
+    background-image: linear-gradient( blue, white); 
+    -webkit-background-clip: text;
+    color:transparent;
+    opacity: 0.9;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+}
+#no{
+    font-weight: bold; 
+    opacity: .99;
+}
+h1{
+  padding-top: 30px;
+}
+#stratheadwrap{
+  padding: 20px;
+  background: rgba(0, 0, 0, .75);
+  border-radius: 15px;
+
+  width: 550px;
+ color: white;
+}
+#p{
+  opacity: 100%;
+}
+#quotenauthor{
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  color: white;   
+  font-style: italic;  
+} 
