@@ -1,74 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+  <?php?>
 <head>
-    <title>FocusFocus</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<style>
-    .wrapper {
-        overflow: hidden;
-     }
-    .sliding-background {
-        background: url("files/bgimage.svg") repeat-x;
-        background-position-y: relative;
-        opacity: 50%;
-        height: 961px;
-        width: 6000px;
-        animation: slide 60s linear infinite;
-     }
-    @keyframes slide {
-        0%{
-            transform: translate3d(-2000px, 0, 0);
-        }
-        100%{
-            transform: translate3d(0, 0, 0);
-        }
-    }
-    #body{
-        position: fixed;
-        z-index: 1;
-    }
-/* body{
- background-color: white;
- padding: 20px;
- font-family: "lato", sans-serif;
- margin: auto;
- opacity: .65;
- max-width: 1000px;
- min-height: 100%
-}
-#starthead{text-align:center;
-opacity: .99;
-}
-h1 {
-  text-shadow: 2px 2px 5px grey;
-}
-html{
-  background: url("oompa.jpg") no-repeat center center fixed;
- -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#no
-{
-  font-weight: bold;
-   opacity: .99;
-}
-*/
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FocusFocus</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
-<div class="wrapper">
-    <div id="body">
+
+  <div class="flex-container"> 
+    <div class="sliding-background"></div> 
+    <!--sliding image background-->
+    <div id="content">
+      <div id="stratheadwrap">
         <div id="starthead">
-          <h1>Where you going buddy?</h1>
-          <p>You can't run from us.</p>
-          <p>We know that you wanna get off your work.</p>
-          <p>no can do</p>
+          <!--shadow text and title-->
+          <h1 class="main" data-text="FOCUS">FOCUS</h1>
+          <div id="quotenauthor">
+          <div id="quote">
+            Don't forget: life is a race, if you don't run fast, you'll get trampled.
+          </div>
+          <div class="author">
+            - Anonymous
+          </div>
+            </div>
+        </div>
         </div>
     </div>
-    <div class="sliding-background"></div> 
 </div>
-
+  <script src="quote.js"></script>
 </body>
 </html>
